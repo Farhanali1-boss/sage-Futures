@@ -18,7 +18,8 @@ const Advisory: React.FC = () => {
             Unfinished Business Initiative
           </h1>
           <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed max-w-3xl">
-            Strategic advisory and technical assistance for institutions working through legacy constraints, misalignment, and unfinished structural repair.
+            A strategic advisory and technical assistance program of Sage Futures, a 501(c)(3) community development corporation,
+            for institutions working through legacy constraints, misalignment, and unfinished structural repair.
           </p>
         </Reveal>
 

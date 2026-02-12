@@ -61,6 +61,10 @@ const Services: React.FC = () => {
           <p className="text-sm md:text-base text-brand-charcoal/75 max-w-3xl">
             Sustainability consulting for Construction, Food, fashion, finance industries.
           </p>
+          <p className="text-sm md:text-base text-brand-charcoal/75 max-w-3xl">
+            Legacy initiatives such as NVZN Innovation Lab, SisTainable, and Baby Greenz have shaped how Sage Futures centers
+            Black ecopreneurs, Black women in sustainability leadership, and youth-focused environmental education within this work.
+          </p>
         </Reveal>
 
         <Reveal as="section" className="space-y-10" delayMs={80}>

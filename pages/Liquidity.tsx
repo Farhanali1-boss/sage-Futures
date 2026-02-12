@@ -10,7 +10,7 @@ const Liquidity: React.FC = () => {
         <Reveal as="section" className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-serif text-brand-sage">Liquidity</h1>
           <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
-            Capital enablement for organizations ready to implement change.
+            A capital enablement initiative of Sage Futures, a 501(c)(3) community development corporation, for organizations ready to implement change.
           </p>
         </Reveal>
 
