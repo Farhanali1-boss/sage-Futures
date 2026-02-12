@@ -58,6 +58,9 @@ const Services: React.FC = () => {
             Sage Futures is a nonprofit community development corporation (CDC). Our work is organized into programmatic
             initiatives that support community development, funding and grant readiness, and organizational systems change.
           </p>
+          <p className="text-sm md:text-base text-brand-charcoal/75 max-w-3xl">
+            Sustainability consulting for Construction, Food, fashion, finance industries.
+          </p>
         </Reveal>
 
         <Reveal as="section" className="space-y-10" delayMs={80}>

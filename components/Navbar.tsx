@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
                   Sage Futures
                 </span>
                 <span className="text-[10px] tracking-[0.3em] text-brand-charcoal/60 uppercase font-medium">
-                  Nonprofit Community Development CDC
+                  Sage Futures is a 501(c)(3) community development corporation
                 </span>
               </div>
             </Link>

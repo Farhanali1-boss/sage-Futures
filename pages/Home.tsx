@@ -25,7 +25,7 @@ const Home: React.FC = () => {
               Community Development for Durable, Just Futures
             </h1>
             <p className="text-lg md:text-xl text-brand-charcoal/85 leading-relaxed font-light max-w-2xl">
-              Sage Futures is a nonprofit community development corporation (CDC) strengthening the systems that hold community care, capital, and capacity over time.
+              Sage Futures is a 501(c)(3) nonprofit community development corporation (CDC) strengthening the systems that hold community care, capital, and capacity over time.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-6">
               <Link
@@ -47,15 +47,27 @@ const Home: React.FC = () => {
         <div className="absolute right-0 bottom-0 w-1/4 h-full bg-brand-stone/20 hidden lg:block -skew-x-[20deg] origin-top translate-x-24 z-10"></div>
       </section>
 
-      {/* Intro */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Reveal as="div" className="space-y-6">
-            <p className="text-base md:text-lg text-brand-charcoal/75 leading-relaxed">
-              As a CDC, Sage Futures advances community development, institutional strengthening, and systems repair with and alongside organizations, networks, and neighborhoods.
+      {/* Mission & Who We Serve */}
+      <section id="Mission" className="py-24 bg-white border-b border-brand-stone/10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <Reveal as="div" className="space-y-4">
+            <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-brass">
+              Mission
             </p>
-            <p className="text-base md:text-lg text-brand-charcoal/75 leading-relaxed">
-              We support partners in moving beyond short-term fixes toward durable, values-aligned structures—where care, capital, and coordination work together rather than compete.
+            <h2 className="text-2xl md:text-3xl font-serif text-brand-charcoal">
+              Our Mission
+            </h2>
+            <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
+              Our mission is to provide service, education, and skills to community members in underserved neighborhoods through Ethno-cultural and eco-friendly activities for the creation of sustainable closed-loop systems in underserved communities and ultimately raise environmental consciousness and transform lifestyles.
+            </p>
+          </Reveal>
+
+          <Reveal as="div" className="space-y-4">
+            <h3 className="text-sm font-bold tracking-[0.3em] uppercase text-brand-brass">
+              Who We Serve
+            </h3>
+            <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
+              Traditionally underserved neighborhoods in Georgia are impoverished, lacking in opportunities and access. As an Indigenous and African American Woman who has lived in these areas, my language and presentation can reach those in these communities to receive the training they need that Allies of these communities would otherwise not be able to reach. Diversity and Inclusion in the Allocation of Abundance is our goal.
             </p>
           </Reveal>
         </div>
