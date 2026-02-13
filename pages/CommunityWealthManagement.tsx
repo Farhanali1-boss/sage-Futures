@@ -1,15 +1,31 @@
 import React from "react";
 import Reveal from "../components/Reveal";
+import EcosystemPuzzle from "../components/EcosystemPuzzle";
 
 const CommunityWealthManagement: React.FC = () => {
   return (
     <div className="fade-in pt-32 pb-24 bg-brand-offwhite min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        <Reveal as="section" className="space-y-6">
-          <h1 className="text-4xl md:text-5xl font-serif text-brand-charcoal">Community Wealth Management</h1>
-          <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed max-w-3xl">
-            Community Wealth Management is the coordinated stewardship of land, capital, infrastructure, and relationships to ensure long-term stability and prosperity in South DeKalb County.
-          </p>
+        <Reveal as="section" className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-serif text-brand-charcoal mb-6">Community Wealth Management</h1>
+              <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
+                Community Wealth Management is the coordinated stewardship of land, capital, infrastructure, and relationships to ensure long-term stability and prosperity in South DeKalb County.
+              </p>
+            </div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800"
+                alt="Community building and collaboration"
+                className="w-full h-56 md:h-64 object-cover"
+              />
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal as="section" className="py-8" delayMs={60}>
+          <EcosystemPuzzle />
         </Reveal>
 
         <Reveal as="section" className="space-y-6" delayMs={80}>

@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal';
+import EcosystemPuzzle from '../components/EcosystemPuzzle';
 
 const Home: React.FC = () => {
   return (
     <div className="fade-in pt-20">
-      {/* Hero */}
+      {/* Hero - Community building */}
       <section className="relative min-h-[90vh] py-24 md:py-36 bg-brand-offwhite border-b border-brand-stone overflow-hidden flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070"
-            alt="Community development"
+            src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=2070"
+            alt="Community building and involvement"
             className="w-full h-full object-cover opacity-40 grayscale-[0.3] contrast-125"
           />
         </div>
@@ -42,51 +43,124 @@ const Home: React.FC = () => {
         <div className="absolute right-0 bottom-0 w-1/4 h-full bg-brand-stone/20 hidden lg:block -skew-x-[20deg] origin-top translate-x-24 z-10" aria-hidden="true" />
       </section>
 
-      {/* Mission Snapshot */}
+      {/* Mission Snapshot with Community Involvement Image */}
       <section className="py-24 bg-white border-b border-brand-stone/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-          <Reveal as="div" className="space-y-4">
-            <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-brass">Mission Snapshot</p>
-            <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
-              Sage Futures advances long-term community wealth stability in South DeKalb County through sustainable development, capital alignment, and non-extractive economic strategy.
-            </p>
-            <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
-              We focus on building durable systems of land stewardship, financial readiness, and development coordination that strengthen underserved communities.
-            </p>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Reveal as="div" className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-brass">Mission Snapshot</p>
+              <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
+                Sage Futures advances long-term community wealth stability in South DeKalb County through sustainable development, capital alignment, and non-extractive economic strategy.
+              </p>
+              <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
+                We focus on building durable systems of land stewardship, financial readiness, and development coordination that strengthen underserved communities.
+              </p>
+            </div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800"
+                alt="Community involvement and collaboration"
+                className="w-full h-64 md:h-80 object-cover"
+              />
+            </div>
           </Reveal>
         </div>
       </section>
 
-      {/* Our Focus Areas */}
+      {/* Ecosystem Puzzle - 6 Focus Areas */}
       <section className="py-24 bg-brand-offwhite">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal as="div" className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-serif text-brand-sage mb-4">Our Focus Areas</h2>
+            <h2 className="text-2xl md:text-3xl font-serif text-brand-sage mb-4">Our Ecosystem</h2>
+            <p className="text-base md:text-lg text-brand-charcoal/75 max-w-2xl">
+              Six interconnected focus areas that build community wealth infrastructure in South DeKalb.
+            </p>
           </Reveal>
-          <Reveal as="div" className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 border border-brand-stone/30 shadow-sm">
-              <h3 className="text-lg font-serif text-brand-charcoal mb-3">Sustainable Housing &amp; Adaptive Reuse</h3>
-              <p className="text-sm md:text-base text-brand-charcoal/80 leading-relaxed">
-                Supporting land stewardship and development coordination that preserves community assets and enables responsible reuse of existing structures.
+          <Reveal as="div" delayMs={80}>
+            <EcosystemPuzzle />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Our Focus Areas - 6 Pillars with clear mapping */}
+      <section className="py-24 bg-white border-t border-brand-stone/20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Reveal as="div" className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-serif text-brand-sage mb-4">Our Focus Areas</h2>
+            <p className="text-base md:text-lg text-brand-charcoal/75 max-w-2xl">
+              Capital readiness, asset stewardship, sustainable land use, youth pipeline, enterprise incubation, and training infrastructure.
+            </p>
+          </Reveal>
+          <Reveal as="div" className="grid md:grid-cols-2 gap-6">
+            <div className="bg-brand-offwhite p-6 border-l-4 border-brand-sage">
+              <h3 className="text-base font-serif text-brand-charcoal font-semibold mb-1">1. Capital Readiness</h3>
+              <p className="text-xs text-brand-brass font-medium mb-2">Liquidity</p>
+              <p className="text-sm text-brand-charcoal/80 leading-relaxed">
+                Preparing small businesses, families, and development initiatives to access aligned funding pathways.
               </p>
             </div>
-            <div className="bg-white p-8 border border-brand-stone/30 shadow-sm">
-              <h3 className="text-lg font-serif text-brand-charcoal mb-3">Community Capital Readiness</h3>
-              <p className="text-sm md:text-base text-brand-charcoal/80 leading-relaxed">
-                Preparing small businesses, families, and development initiatives to access aligned funding pathways and build financial positioning.
+            <div className="bg-brand-offwhite p-6 border-l-4 border-brand-sage">
+              <h3 className="text-base font-serif text-brand-charcoal font-semibold mb-1">2. Asset Stewardship</h3>
+              <p className="text-xs text-brand-brass font-medium mb-2">Unfinished Business</p>
+              <p className="text-sm text-brand-charcoal/80 leading-relaxed">
+                Strategic advisory and technical assistance for institutions working through legacy constraints and systems repair.
               </p>
             </div>
-            <div className="bg-white p-8 border border-brand-stone/30 shadow-sm">
-              <h3 className="text-lg font-serif text-brand-charcoal mb-3">Enterprise &amp; Workforce Infrastructure</h3>
-              <p className="text-sm md:text-base text-brand-charcoal/80 leading-relaxed">
-                Strengthening governance and collective infrastructure through training, relational coordination models, and institutional capacity.
+            <div className="bg-brand-offwhite p-6 border-l-4 border-brand-sage">
+              <h3 className="text-base font-serif text-brand-charcoal font-semibold mb-1">3. Sustainable Land Use</h3>
+              <p className="text-xs text-brand-brass font-medium mb-2">Goddesses Garden</p>
+              <p className="text-sm text-brand-charcoal/80 leading-relaxed">
+                Land stewardship, environmental education, and sustainable food systems in South DeKalb.
               </p>
             </div>
-            <div className="bg-white p-8 border border-brand-stone/30 shadow-sm">
-              <h3 className="text-lg font-serif text-brand-charcoal mb-3">Intergenerational Asset Stability</h3>
-              <p className="text-sm md:text-base text-brand-charcoal/80 leading-relaxed">
-                Building systems that support asset retention, long-term stewardship, and continuity across generations in South DeKalb communities.
+            <div className="bg-brand-offwhite p-6 border-l-4 border-brand-sage">
+              <h3 className="text-base font-serif text-brand-charcoal font-semibold mb-1">4. Youth Pipeline</h3>
+              <p className="text-xs text-brand-brass font-medium mb-2">WOW Kids</p>
+              <p className="text-sm text-brand-charcoal/80 leading-relaxed">
+                Youth-focused programming building environmental awareness and intergenerational connection.
               </p>
+            </div>
+            <div className="bg-brand-offwhite p-6 border-l-4 border-brand-sage">
+              <h3 className="text-base font-serif text-brand-charcoal font-semibold mb-1">5. Enterprise Incubation</h3>
+              <p className="text-xs text-brand-brass font-medium mb-2">EcoBator</p>
+              <p className="text-sm text-brand-charcoal/80 leading-relaxed">
+                Supporting emerging initiatives in sustainability and community-based innovation within South DeKalb County.
+              </p>
+            </div>
+            <div className="bg-brand-offwhite p-6 border-l-4 border-brand-sage">
+              <h3 className="text-base font-serif text-brand-charcoal font-semibold mb-1">6. Training Infrastructure</h3>
+              <p className="text-xs text-brand-brass font-medium mb-2">Triple U + Village</p>
+              <p className="text-sm text-brand-charcoal/80 leading-relaxed">
+                Governance and collective infrastructure training, relational coordination models, and Village Workshops.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Garden Section with Image */}
+      <section className="py-24 bg-brand-offwhite border-t border-brand-stone/20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Reveal as="div" className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-brass mb-4">Sustainable Land Use</p>
+              <h2 className="text-2xl md:text-3xl font-serif text-brand-charcoal mb-6">Goddesses Garden</h2>
+              <p className="text-base text-brand-charcoal/80 leading-relaxed mb-4">
+                Community gardens and sustainable land use anchor our work in South DeKalb. Goddesses Garden advances land stewardship, environmental education, and sustainable food systems—building resilience and connection to place.
+              </p>
+              <Link
+                to="/programs"
+                className="inline-block text-brand-sage font-semibold text-sm uppercase tracking-widest hover:text-brand-brass transition-colors"
+              >
+                Learn more about our programs →
+              </Link>
+            </div>
+            <div className="order-1 md:order-2 relative overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&q=80&w=800"
+                alt="Community garden - sustainable land use"
+                className="w-full h-64 md:h-80 object-cover"
+              />
             </div>
           </Reveal>
         </div>

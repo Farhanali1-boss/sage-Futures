@@ -22,7 +22,9 @@ const Contact: React.FC = () => {
     ];
     const body = encodeURIComponent(bodyLines.join('\n'));
 
-    window.location.href = `mailto:info@niazharper.com?subject=${subject}&body=${body}`;
+    // Update with your actual contact email
+    const contactEmail = 'inquiry@sagefutures.org';
+    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
 
     setSubmitted(true);
   };

@@ -71,20 +71,9 @@ const Footer: React.FC = () => {
             <h3 className="text-brand-brass font-bold text-[10px] uppercase tracking-[0.3em] mb-10">Contact &amp; Partnerships</h3>
             <ul className="space-y-6 text-xs font-semibold uppercase tracking-[0.2em] text-brand-offwhite/60">
               <li>
-                <a
-                  href="mailto:Inquiry@sagefutures.com"
-                  className="text-brand-offwhite hover:text-brand-brass transition-colors select-all"
-                >
-                  Inquiry@sagefutures.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:info@niazharper.com"
-                  className="text-brand-offwhite hover:text-brand-brass transition-colors select-all"
-                >
-                  info@niazharper.com
-                </a>
+                <Link to="/contact" className="text-brand-offwhite hover:text-brand-brass transition-colors duration-300">
+                  Submit an inquiry
+                </Link>
               </li>
               <li><Link to="/partners" className="hover:text-brand-brass transition-colors duration-300">Partners</Link></li>
               <li><Link to="/contact" className="hover:text-brand-brass transition-colors duration-300">Contact</Link></li>
