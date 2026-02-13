@@ -1,15 +1,13 @@
-
-import React, { useState, useEffect } from 'react';
-import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
+import React from 'react';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import Advisory from './pages/Advisory';
-import Services from './pages/Services';
-import Partnerships from './pages/Pricing';
-import AnalogVillage from './pages/AnalogVillage';
-import Liquidity from './pages/Liquidity';
-import About from './pages/About';
-import Impact from './pages/Impact';
-import Resources from './pages/Resources';
+import Mission from './pages/Mission';
+import CommunityWealthManagement from './pages/CommunityWealthManagement';
+import Programs from './pages/Programs';
+import TrainingAdvisory from './pages/TrainingAdvisory';
+import CommunityCapital from './pages/CommunityCapital';
+import Governance from './pages/Governance';
+import Partners from './pages/Partners';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -32,14 +30,13 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/advisory" element={<Advisory />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/analog-village" element={<AnalogVillage />} />
-            <Route path="/liquidity" element={<Liquidity />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/impact" element={<Impact />} />
-            <Route path="/partnerships" element={<Partnerships />} />
-            <Route path="/resources" element={<Resources />} />
+            <Route path="/mission" element={<Mission />} />
+            <Route path="/community-wealth-management" element={<CommunityWealthManagement />} />
+            <Route path="/programs" element={<Programs />} />
+            <Route path="/training-advisory" element={<TrainingAdvisory />} />
+            <Route path="/community-capital" element={<CommunityCapital />} />
+            <Route path="/governance" element={<Governance />} />
+            <Route path="/partners" element={<Partners />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

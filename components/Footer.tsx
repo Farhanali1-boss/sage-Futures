@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               </div>
             </Link>
             <p className="text-base leading-relaxed max-w-sm text-brand-offwhite/70 font-light">
-              Designing architectures for structural integrity in modern care and organizational delivery. Grounded in economic logic, engineered for longevity.
+              South DeKalb–anchored Community Development Corporation focused on Community Wealth Infrastructure and Development Partnerships.
             </p>
             <div className="mt-12 flex flex-col gap-4 opacity-60 hover:opacity-100 transition-opacity duration-500">
               <span className="text-[10px] font-bold uppercase tracking-widest border-b border-brand-stone inline-block w-fit">Credentialed Practice</span>
@@ -57,17 +57,18 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="md:col-span-2 md:col-start-7">
-            <h3 className="text-brand-brass font-bold text-[10px] uppercase tracking-[0.3em] mb-10">Programs & Service Areas</h3>
+            <h3 className="text-brand-brass font-bold text-[10px] uppercase tracking-[0.3em] mb-10">Explore</h3>
             <ul className="space-y-6 text-xs font-semibold uppercase tracking-[0.2em] text-brand-offwhite/60">
-              <li><Link to="/services" className="hover:text-brand-brass transition-colors duration-300">Programs &amp; Service Areas</Link></li>
-              <li><Link to="/liquidity" className="hover:text-brand-brass transition-colors duration-300">Liquidity Initiative</Link></li>
-              <li><Link to="/analog-village" className="hover:text-brand-brass transition-colors duration-300">Analog Village</Link></li>
-              <li><Link to="/impact" className="hover:text-brand-brass transition-colors duration-300">Impact</Link></li>
+              <li><Link to="/mission" className="hover:text-brand-brass transition-colors duration-300">Mission</Link></li>
+              <li><Link to="/community-wealth-management" className="hover:text-brand-brass transition-colors duration-300">Community Wealth Management</Link></li>
+              <li><Link to="/programs" className="hover:text-brand-brass transition-colors duration-300">Programs</Link></li>
+              <li><Link to="/community-capital" className="hover:text-brand-brass transition-colors duration-300">Community Capital</Link></li>
+              <li><Link to="/governance" className="hover:text-brand-brass transition-colors duration-300">Governance</Link></li>
             </ul>
           </div>
           
           <div className="md:col-span-3 md:col-start-10">
-            <h3 className="text-brand-brass font-bold text-[10px] uppercase tracking-[0.3em] mb-10">Inquiry & Partnerships</h3>
+            <h3 className="text-brand-brass font-bold text-[10px] uppercase tracking-[0.3em] mb-10">Contact &amp; Partnerships</h3>
             <ul className="space-y-6 text-xs font-semibold uppercase tracking-[0.2em] text-brand-offwhite/60">
               <li>
                 <a
@@ -85,15 +86,15 @@ const Footer: React.FC = () => {
                   info@niazharper.com
                 </a>
               </li>
-              <li><Link to="/partnerships" className="hover:text-brand-brass transition-colors duration-300">Partnerships</Link></li>
-              <li><Link to="/contact" className="hover:text-brand-brass transition-colors duration-300">Contact / Inquiry</Link></li>
+              <li><Link to="/partners" className="hover:text-brand-brass transition-colors duration-300">Partners</Link></li>
+              <li><Link to="/contact" className="hover:text-brand-brass transition-colors duration-300">Contact</Link></li>
             </ul>
           </div>
         </div>
         
         <div className="mt-24 pt-12 border-t border-white/5 text-[9px] tracking-[0.4em] font-medium uppercase text-brand-stone/40 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           <div className="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0 text-center md:text-left">
-            <p>&copy; {new Date().getFullYear()} Sage Futures International</p>
+            <p>&copy; {new Date().getFullYear()} Sage Futures</p>
             <span className="hidden md:inline text-brand-stone/20">|</span>
             <p>Non-Clinical Professional Practice</p>
           </div>

@@ -16,11 +16,14 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Programs & Service Areas', path: '/services' },
-    { name: 'Impact', path: '/impact' },
-    { name: 'Partnerships', path: '/partnerships' },
-    { name: 'Resources', path: '/resources' },
+    { name: 'Mission', path: '/mission' },
+    { name: 'Community Wealth Management', path: '/community-wealth-management' },
+    { name: 'Programs', path: '/programs' },
+    { name: 'Training & Advisory', path: '/training-advisory' },
+    { name: 'Community Capital', path: '/community-capital' },
+    { name: 'Governance', path: '/governance' },
+    { name: 'Partners', path: '/partners' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -61,12 +64,6 @@ const Navbar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <Link 
-              to="/contact" 
-              className="ml-4 px-5 py-2.5 bg-brand-sage text-white text-xs font-bold uppercase tracking-widest hover:bg-brand-brass transition-all duration-300"
-            >
-              Contact / Inquiry
-            </Link>
           </div>
 
           <div className="lg:hidden flex items-center">
@@ -101,13 +98,6 @@ const Navbar: React.FC = () => {
               {link.name}
             </Link>
           ))}
-          <Link
-            to="/contact"
-            onClick={() => setIsOpen(false)}
-            className="block px-3 py-4 text-sm font-bold uppercase tracking-widest text-brand-sage"
-          >
-            Contact
-          </Link>
         </div>
       </div>
     </nav>

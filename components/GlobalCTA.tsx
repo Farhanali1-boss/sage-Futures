@@ -20,7 +20,7 @@ const GlobalCTA: React.FC = () => {
             Ready to explore partnership or program fit?
           </h2>
           <p className="text-sm md:text-base text-brand-offwhite/80 leading-relaxed max-w-xl">
-            Sage Futures is a nonprofit community development corporation (CDC). Engagements are customized based on scope, alignment, and organizational needs across our program areas.
+            Sage Futures is a South DeKalb–based Community Development Corporation. Engagements are customized based on scope, alignment, and organizational needs across our program areas.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
@@ -28,13 +28,13 @@ const GlobalCTA: React.FC = () => {
             to="/contact"
             className="flex-1 sm:flex-none text-center bg-brand-brass text-white px-8 py-4 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-white hover:text-brand-sage transition-all transform hover:-translate-y-0.5 active:translate-y-0"
           >
-            Request an Intake Conversation
+            Partner With Us
           </Link>
           <Link
-            to="/services"
+            to="/programs"
             className="flex-1 sm:flex-none text-center border border-brand-offwhite/50 text-brand-offwhite px-8 py-4 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-brand-offwhite hover:text-brand-sage transition-all transform hover:-translate-y-0.5 active:translate-y-0"
           >
-            Explore Our Programs
+            Explore Our Work
           </Link>
         </div>
       </Reveal>
